@@ -376,7 +376,7 @@ button, input { font: inherit; }
   .picks-grid .card--feature { grid-column: span 2; grid-row: span 2; }
   /* the photo grows to fill the two-row height so the button isn't stranded */
   .picks-grid .card--feature .card-media { aspect-ratio: auto; flex: 1; min-height: 340px; }
-  .picks-grid .card--feature .card-media img { position: absolute; inset: 0; }
+  .picks-grid .card--feature .card-media img { position: absolute; inset: 0; object-fit: contain; }
   .picks-grid .card--feature .card-why,
   .picks-grid .card--feature .card-body { flex: none; }
 }
