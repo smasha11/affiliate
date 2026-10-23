@@ -362,7 +362,7 @@ button, input { font: inherit; }
 @media (min-width: 640px) {
   .card--row { flex-direction: row; }
   .card--row .card-media { flex: 0 0 42%; aspect-ratio: auto; min-height: 100%; border-radius: calc(var(--r-md) - 2px) 0 0 calc(var(--r-md) - 2px); }
-  .card--row .card-media img { position: absolute; inset: 0; object-fit: contain; }
+  .card--row .card-media img { position: absolute; inset: 0; }
   .card--row .score { bottom: var(--s-4); right: var(--s-4); box-shadow: none; }
   .card--row .card-meta { padding-right: 0; }
 }
@@ -376,7 +376,7 @@ button, input { font: inherit; }
   .picks-grid .card--feature { grid-column: span 2; grid-row: span 2; }
   /* the photo grows to fill the two-row height so the button isn't stranded */
   .picks-grid .card--feature .card-media { aspect-ratio: auto; flex: 1; min-height: 340px; }
-  .picks-grid .card--feature .card-media img { position: absolute; inset: 0; object-fit: contain; }
+  .picks-grid .card--feature .card-media img { position: absolute; inset: 0; }
   .picks-grid .card--feature .card-why,
   .picks-grid .card--feature .card-body { flex: none; }
 }
