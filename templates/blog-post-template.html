@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<!--
+=============================================================================
+  BLOG POST TEMPLATE
+  1. Copy to /blog/your-post-slug/index.html  (clean URL = the folder name)
+  2. Images: /assets/img/blog/your-post-slug.webp      (1600x900 featured)
+             /assets/img/blog/your-post-slug-pin.webp  (1000x1500, 2:3 pin)
+  3. <head>: title, meta description (under 155 chars), canonical, og:*,
+     article:published_time, and the Article / ItemList / FAQPage JSON-LD
+  4. Body: H1, dek, Our Top Pick box, table of contents (one <li> per H2),
+     sections with product cards (copy from /templates/product-card.html),
+     the Pinterest slot (update both pin image URLs + Save button link), FAQ
+  5. Add a post card to /blog/ and the homepage "Latest from the blog",
+     and the URL to /sitemap.xml
+  Remove the <meta name="robots" content="noindex"> line before publishing.
+=============================================================================
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Pin-Worthy Post Title (Keyword First)</title>
+<meta name="description" content="Under 155 characters. Pinterest shows this under the pin, so make it specific and keyword-rich.">
+<link rel="canonical" href="https://www.tinykitchenlab.com/blog/your-post-slug/">
+<meta name="theme-color" content="#141414">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+
+<!-- Open Graph / social -->
+<meta property="og:site_name" content="Tiny Kitchen Lab">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Your Pin-Worthy Post Title (Keyword First)">
+<meta property="og:description" content="Under 155 characters. Pinterest shows this under the pin, so make it specific and keyword-rich.">
+<meta property="og:url" content="https://www.tinykitchenlab.com/blog/your-post-slug/">
+<meta property="og:image" content="https://www.tinykitchenlab.com/assets/img/blog/your-post-slug.webp">
+<meta property="og:image:alt" content="Your Pin-Worthy Post Title (Keyword First)">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex">
+<!-- Article + Pinterest rich pins (Pinterest reads these Open Graph article tags) -->
+<meta property="article:published_time" content="2026-10-14T08:00:00+00:00">
+<meta property="article:modified_time" content="2026-10-14T08:00:00+00:00">
+<meta property="article:author" content="Tiny Kitchen Lab">
+<meta property="article:section" content="Roundup">
+<meta name="pinterest-rich-pin" content="true">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="900">
+
+<!-- Fonts: Archivo (display, variable width) + Inter (body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="/assets/css/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tinykitchenlab.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.tinykitchenlab.com/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Short crumb title",
+      "item": "https://www.tinykitchenlab.com/blog/your-post-slug/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Your Pin-Worthy Post Title (Keyword First)",
+  "description": "Under 155 characters. Pinterest shows this under the pin, so make it specific and keyword-rich.",
+  "image": [
+    "https://www.tinykitchenlab.com/assets/img/blog/your-post-slug.webp",
+    "https://www.tinykitchenlab.com/assets/img/blog/your-post-slug-pin.webp"
+  ],
+  "datePublished": "2026-10-14",
+  "dateModified": "2026-10-14",
+  "author": {
+    "@type": "Organization",
+    "name": "Tiny Kitchen Lab",
+    "url": "https://www.tinykitchenlab.com/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Tiny Kitchen Lab",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.tinykitchenlab.com/assets/img/favicon.svg"
+    }
+  },
+  "mainEntityOfPage": "https://www.tinykitchenlab.com/blog/your-post-slug/"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Your Pin-Worthy Post Title (Keyword First)",
+  "numberOfItems": 2,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Expandable Two-Tier Cabinet Shelf",
+      "url": "https://www.tinykitchenlab.com/blog/your-post-slug/#two-tier-cabinet-shelf"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Collapsible Silicone Colander",
+      "url": "https://www.tinykitchenlab.com/blog/your-post-slug/#collapsible-colander"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Question?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Answer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Second question?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Answer."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="disclosure-bar"><p>As an Amazon Associate I earn from qualifying purchases. <a href="/affiliate-disclosure/">How we make money</a></p></div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="/" aria-label="Tiny Kitchen Lab home"><span class="logo-mark" aria-hidden="true">TK</span><span class="logo-text">Tiny Kitchen Lab</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-bars"></span><span class="visually-hidden">Menu</span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="/">Home</a></li>
+        <li class="has-dropdown">
+          <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="cat-menu">Categories</button>
+          <ul class="dropdown-menu" id="cat-menu">
+            <li><a href="/categories/space-saving-storage/">Space-Saving Storage</a></li>
+            <li><a href="/categories/counter-smart-appliances/">Counter-Smart Appliances</a></li>
+            <li><a href="/categories/prep-cutting-tools/">Prep &amp; Cutting Tools</a></li>
+            <li><a href="/categories/stackable-cookware/">Stackable Cookware</a></li>
+            <li><a href="/categories/rental-friendly-upgrades/">Rental-Friendly Upgrades</a></li>
+            <li><a href="/categories/">All categories</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link" href="/best-sellers/">Best Sellers</a></li>
+        <li><a class="nav-link" href="/budget-picks/">Budget Picks</a></li>
+        <li><a class="nav-link" href="/blog/" aria-current="page">Blog</a></li>
+        <li><a class="nav-link" href="/about/">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<article>
+<header class="post-head">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/blog/">Blog</a></li><li><span aria-current="page">Short crumb title</span></li></ol></nav>
+    <h1 class="page-title">Your Pin-Worthy Post Title (Keyword First)</h1>
+    <p class="lede">One- or two-sentence dek under the headline.</p>
+    <div class="post-byline">
+      <span>By <strong>Tiny Kitchen Lab team</strong></span>
+      <span>Updated <time datetime="2026-10-14">Oct 14, 2026</time></span>
+      <span>11 min read</span>
+      <a class="btn btn--pin btn--sm" href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.tinykitchenlab.com%2Fblog%2Fyour-post-slug%2F&amp;media=https%3A%2F%2Fwww.tinykitchenlab.com%2Fassets%2Fimg%2Fblog%2Fyour-post-slug-pin.webp&amp;description=Your+Pin-Worthy+Post+Title+%28Keyword+First%29" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.6 19.3c-.1-.8-.2-2 0-2.9l1.2-5s-.3-.6-.3-1.5c0-1.4.8-2.5 1.8-2.5.9 0 1.3.6 1.3 1.4 0 .9-.5 2.1-.8 3.3-.2 1 .5 1.8 1.5 1.8 1.8 0 3.1-1.9 3.1-4.6 0-2.4-1.7-4.1-4.2-4.1-2.9 0-4.5 2.1-4.5 4.4 0 .9.3 1.8.8 2.3l.1.4-.3 1.1c0 .2-.2.2-.4.1-1.3-.6-2.1-2.5-2.1-4 0-3.3 2.4-6.3 6.9-6.3 3.6 0 6.4 2.6 6.4 6 0 3.6-2.3 6.5-5.4 6.5-1.1 0-2.1-.6-2.4-1.2l-.7 2.5c-.2.9-.9 2.1-1.3 2.8A10 10 0 1 0 12 2z"/></svg>Save to Pinterest</a>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <figure class="featured-img"><img src="/assets/img/blog/your-post-slug.webp" alt="Your Pin-Worthy Post Title (Keyword First), featured image" width="1600" height="900" fetchpriority="high" decoding="async"></figure>
+</div>
+<div class="reading paper">
+  <div class="container">
+    <div class="prose">
+<p class="post-note"><em>This post contains affiliate links. If you buy through them, we may earn a commission at no extra cost to you.</em></p>
+<p>Opening paragraph: the problem and the promise.</p>
+<!-- ===== OUR TOP PICK BOX ===== -->
+<aside class="top-pick" aria-labelledby="top-pick-title">
+  <h2 class="top-pick-title" id="top-pick-title">Our Top Pick</h2>
+  <p>If you only change one thing, make it your cookware. This set put nine pieces into the space of one pot and freed a whole cabinet.</p>
+  <!-- PRODUCT CARD: Expandable Two-Tier Cabinet Shelf | swap AFFILIATE_LINK_HERE for your Amazon link -->
+  <article class="card card--row" data-category="storage">
+    <div class="card-media">
+      <img src="/assets/img/products/two-tier-cabinet-shelf.webp" alt="Expandable Two-Tier Cabinet Shelf, product photo" width="800" height="600" loading="lazy" decoding="async">
+      <span class="badge badge--pick">Editor's Pick</span>
+      <p class="score"><span class="visually-hidden">Lab Score: </span><b>9.1</b><span aria-hidden="true">/10<br>Lab score</span><span class="visually-hidden"> out of 10</span></p>
+    </div>
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="best-for"><b>Best for:</b> Deep upper cabinets</span>
+        <span class="tier"><span aria-hidden="true">$$<i>$</i></span><span class="visually-hidden">Price tier: mid-range</span></span>
+      </div>
+      <h3 class="card-title">Expandable Two-Tier Cabinet Shelf</h3>
+      <p class="card-why">Doubles the usable height inside a cabinet, so plates and bowls stop sharing one tall stack.</p>
+      <div class="card-cta">
+        <a class="btn btn--amazon" href="AFFILIATE_LINK_HERE" target="_blank" rel="sponsored nofollow noopener">Check Price on Amazon</a>
+        <p class="paid">(paid link)</p>
+      </div>
+    </div>
+  </article>
+  <!-- /PRODUCT CARD -->
+</aside>
+<p>Optional second paragraph after the Top Pick box.</p>
+<!-- ===== TABLE OF CONTENTS ===== -->
+<nav class="toc" aria-labelledby="toc-title">
+  <h2 id="toc-title">In this guide</h2>
+  <ol>
+    <li><a href="#section-heading">Section heading</a></li>
+    <li><a href="#another-section">Another section</a></li>
+    <li><a href="#faq">Frequently asked questions</a></li>
+  </ol>
+</nav>
+<h2 id="section-heading">Section heading</h2>
+<p>Optional paragraph before the products.</p>
+<h3 id="two-tier-cabinet-shelf">1. Expandable Two-Tier Cabinet Shelf</h3>
+<p>In a standard 12-inch-deep upper cabinet, the riser split one stack of plates and bowls into two reachable levels. The legs extend to fit openings from 13 to 23 inches.</p>
+<!-- PRODUCT CARD: Expandable Two-Tier Cabinet Shelf | swap AFFILIATE_LINK_HERE for your Amazon link -->
+<article class="card card--row" data-category="storage">
+  <div class="card-media">
+    <img src="/assets/img/products/two-tier-cabinet-shelf.webp" alt="Expandable Two-Tier Cabinet Shelf, product photo" width="800" height="600" loading="lazy" decoding="async">
+    <p class="score"><span class="visually-hidden">Lab Score: </span><b>9.1</b><span aria-hidden="true">/10<br>Lab score</span><span class="visually-hidden"> out of 10</span></p>
+  </div>
+  <div class="card-body">
+    <div class="card-meta">
+      <span class="best-for"><b>Best for:</b> Deep upper cabinets</span>
+      <span class="tier"><span aria-hidden="true">$$<i>$</i></span><span class="visually-hidden">Price tier: mid-range</span></span>
+    </div>
+    <h4 class="card-title">Expandable Two-Tier Cabinet Shelf</h4>
+    <p class="card-why">Doubles the usable height inside a cabinet, so plates and bowls stop sharing one tall stack.</p>
+    <div class="card-cta">
+      <a class="btn btn--amazon" href="AFFILIATE_LINK_HERE" target="_blank" rel="sponsored nofollow noopener">Check Price on Amazon</a>
+      <p class="paid">(paid link)</p>
+    </div>
+  </div>
+</article>
+<!-- /PRODUCT CARD -->
+<h3 id="collapsible-colander">2. Collapsible Silicone Colander</h3>
+<p>Open, it drains a full pound of pasta. Folded, it's about an inch and a half thick and slides into a drawer next to the baking sheets.</p>
+<!-- PRODUCT CARD: Collapsible Silicone Colander | swap AFFILIATE_LINK_HERE for your Amazon link -->
+<article class="card card--row" data-category="prep">
+  <div class="card-media">
+    <img src="/assets/img/products/collapsible-colander.webp" alt="Collapsible Silicone Colander, product photo" width="800" height="600" loading="lazy" decoding="async">
+    <p class="score"><span class="visually-hidden">Lab Score: </span><b>8.9</b><span aria-hidden="true">/10<br>Lab score</span><span class="visually-hidden"> out of 10</span></p>
+  </div>
+  <div class="card-body">
+    <div class="card-meta">
+      <span class="best-for"><b>Best for:</b> Pasta nights</span>
+      <span class="tier"><span aria-hidden="true">$<i>$$</i></span><span class="visually-hidden">Price tier: budget</span></span>
+    </div>
+    <h4 class="card-title">Collapsible Silicone Colander</h4>
+    <p class="card-why">Opens to full size for pasta and folds to an inch and a half for the drawer.</p>
+    <div class="card-cta">
+      <a class="btn btn--amazon" href="AFFILIATE_LINK_HERE" target="_blank" rel="sponsored nofollow noopener">Check Price on Amazon</a>
+      <p class="paid">(paid link)</p>
+    </div>
+  </div>
+</article>
+<!-- /PRODUCT CARD -->
+<h2 id="another-section">Another section</h2>
+<p>Plain text section with no products.</p>
+<!-- ===== PINTEREST IMAGE SLOT (2:3, 1000x1500) ===== -->
+<aside class="pin-slot" aria-labelledby="pin-title">
+  <img src="/assets/img/blog/your-post-slug-pin.webp" alt="Pinterest graphic: Your Pin-Worthy Post Title (Keyword First)" width="1000" height="1500" loading="lazy" decoding="async"
+       data-pin-description="Your Pin-Worthy Post Title (Keyword First) | Tiny Kitchen Lab" data-pin-media="https://www.tinykitchenlab.com/assets/img/blog/your-post-slug-pin.webp">
+  <div>
+    <h2 id="pin-title">Pin it for your next move</h2>
+    <p>Save this list to your apartment or kitchen board so it's there when you need it.</p>
+    <a class="btn btn--pin btn--sm" href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.tinykitchenlab.com%2Fblog%2Fyour-post-slug%2F&amp;media=https%3A%2F%2Fwww.tinykitchenlab.com%2Fassets%2Fimg%2Fblog%2Fyour-post-slug-pin.webp&amp;description=Your+Pin-Worthy+Post+Title+%28Keyword+First%29" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.6 19.3c-.1-.8-.2-2 0-2.9l1.2-5s-.3-.6-.3-1.5c0-1.4.8-2.5 1.8-2.5.9 0 1.3.6 1.3 1.4 0 .9-.5 2.1-.8 3.3-.2 1 .5 1.8 1.5 1.8 1.8 0 3.1-1.9 3.1-4.6 0-2.4-1.7-4.1-4.2-4.1-2.9 0-4.5 2.1-4.5 4.4 0 .9.3 1.8.8 2.3l.1.4-.3 1.1c0 .2-.2.2-.4.1-1.3-.6-2.1-2.5-2.1-4 0-3.3 2.4-6.3 6.9-6.3 3.6 0 6.4 2.6 6.4 6 0 3.6-2.3 6.5-5.4 6.5-1.1 0-2.1-.6-2.4-1.2l-.7 2.5c-.2.9-.9 2.1-1.3 2.8A10 10 0 1 0 12 2z"/></svg>Save to Pinterest</a>
+  </div>
+</aside>
+<h2 class="faq-title" id="faq">Frequently asked questions</h2>
+<details class="faq-item">
+  <summary>Question?</summary>
+  <p>Answer.</p>
+</details>
+<details class="faq-item">
+  <summary>Second question?</summary>
+  <p>Answer.</p>
+</details>
+<p class="post-footer-cta">Want more picks like these? Browse every tested product in <a href="/categories/space-saving-storage/">Space-Saving Storage</a>, or see our <a href="/budget-picks/">budget picks under $30</a>.</p>
+    </div>
+  </div>
+</div>
+</article>
+<!-- ===== EMAIL SIGNUP BAND =====
+     Replace action="#" with the form URL from your email provider (Mailchimp, Kit, etc.). -->
+<section class="section" aria-labelledby="signup-title">
+  <div class="container">
+    <div class="signup">
+      <div>
+        <h2 id="signup-title">Get the monthly Tiny Kitchen finds list.</h2>
+        <p>One email a month: the products that passed testing, the ones that didn't, and one small-kitchen fix for the weekend.</p>
+      </div>
+      <form class="signup-form" action="#" method="post">
+        <label class="visually-hidden" for="signup-email">Email address</label>
+        <input id="signup-email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+        <button class="btn btn--dark" type="submit">Send me the list</button>
+        <p class="signup-note">No spam. Unsubscribe in one click.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="/"><span class="logo-mark" aria-hidden="true">TK</span><span class="logo-text">Tiny Kitchen Lab</span></a>
+        <p>Gadgets, storage and tools tested in real apartment kitchens, so you only buy what fits.</p>
+      </div>
+      <div>
+        <h2>Categories</h2>
+        <ul>
+          <li><a href="/categories/space-saving-storage/">Space-Saving Storage</a></li>
+          <li><a href="/categories/counter-smart-appliances/">Counter-Smart Appliances</a></li>
+          <li><a href="/categories/prep-cutting-tools/">Prep &amp; Cutting Tools</a></li>
+          <li><a href="/categories/stackable-cookware/">Stackable Cookware</a></li>
+          <li><a href="/categories/rental-friendly-upgrades/">Rental-Friendly Upgrades</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="/best-sellers/">Best Sellers</a></li>
+          <li><a href="/budget-picks/">Budget Picks</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Legal</h2>
+        <ul>
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/affiliate-disclosure/">Affiliate Disclosure</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-disclosure"><strong>Disclosure:</strong> As an Amazon Associate I earn from qualifying purchases.</p>
+    <p class="footer-bottom">&copy; 2026 Tiny Kitchen Lab. Product prices and availability are shown on Amazon and may change.</p>
+  </div>
+</footer>
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>
