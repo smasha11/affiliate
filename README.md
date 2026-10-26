@@ -15,7 +15,7 @@ Then open http://localhost:8080
 | Find | Replace with |
 |---|---|
 | `AFFILIATE_LINK_HERE` | each product's Amazon SiteStripe link (one per button) |
-| `https://www.tinykitchenlab.com` | your real domain (canonicals, OG, schema, sitemap, Pinterest links) |
+| `https://tinykitchenlab.vercel.app` | your custom domain, if you add one later (canonicals, OG, schema, sitemap, Pinterest links) |
 | `YOUR_PINTEREST_HANDLE` | your Pinterest profile (homepage Organization schema) |
 | `action="#"` on the signup form | your email provider's form URL |
 

@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /templates/
 
-Sitemap: https://www.tinykitchenlab.com/sitemap.xml
+Sitemap: https://tinykitchenlab.vercel.app/sitemap.xml
